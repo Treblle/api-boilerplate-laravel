@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Http\Controllers\FallbackController;
 use Illuminate\Support\Facades\Route;
 
 /**
@@ -14,3 +15,4 @@ Route::prefix('v1')->as('v1:')->group(
 /**
  * Other Versions ....
  */
+Route::fallback(FallbackController::class);
