@@ -17,7 +17,8 @@ trait ReturnsJsonResponse
     public function __construct(
         private readonly array $data,
         private readonly Http $status = Http::OK,
-    ) {}
+    ) {
+    }
 
     public function toResponse($request): Response
     {

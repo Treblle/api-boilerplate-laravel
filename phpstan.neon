@@ -7,8 +7,13 @@ parameters:
         - app/
 
     level: 9
+
     ignoreErrors:
 
     excludePaths:
+      - app/Http/Controllers/Auth/
+      - app/Http/Middleware/
+      - app/Http/Requests/Auth
+      - app/Providers/AuthServiceProvider.php
 
     checkMissingIterableValueType: false

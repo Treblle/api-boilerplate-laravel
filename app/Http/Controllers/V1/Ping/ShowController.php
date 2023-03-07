@@ -14,7 +14,7 @@ final class ShowController
     {
         return new MessageResponse(
             data: [
-                'message' => 'Service Online',
+                'message' => strval(trans('messages.service.online')),
             ],
         );
     }
