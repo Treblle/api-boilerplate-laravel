@@ -26,7 +26,7 @@ final readonly class ApiErrorResponse implements Responsable
                 'title' => $this->title,
                 'description' => $this->description,
                 'code' => $this->code->value,
-                'staus' => $this->status->value,
+                'status' => $this->status->value,
             ],
             status: $this->status->value,
         );
