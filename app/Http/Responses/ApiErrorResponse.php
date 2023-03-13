@@ -17,7 +17,8 @@ final readonly class ApiErrorResponse implements Responsable
         private string $description,
         private Error $code,
         private Http $status = Http::INTERNAL_SERVER_ERROR,
-    ) {}
+    ) {
+    }
 
     public function toResponse($request): Response
     {
